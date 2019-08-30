@@ -91,6 +91,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
             var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
 
+            BlueEyesManager blueEyes = GetComponentInChildren<BlueEyesManager>();
+
             // Enable rendering:
             foreach (var component in rendererComponents)
                 component.enabled = true;
@@ -102,6 +104,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             // Enable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = true;
+
+            blueEyes.Tracked();
         }
     }
 
@@ -114,6 +118,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
             var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
 
+            BlueEyesManager blueEyes = GetComponentInChildren<BlueEyesManager>();
+
             // Disable rendering:
             foreach (var component in rendererComponents)
                 component.enabled = false;
@@ -125,6 +131,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             // Disable canvas':
             foreach (var component in canvasComponents)
                 component.enabled = false;
+
+            blueEyes.NotTracked();
         }
     }
 
