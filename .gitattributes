@@ -1,2 +1,2 @@
 *.a filter=lfs diff=lfs merge=lfs -text
-YuGiOhAR_2019.1/YuGiOh_AR_2019.1/Frameworks/Vuforia.framework/Vuforia filter=lfs diff=lfs merge=lfs -text
+YuGiOhAR/YuGiOhAR_2019.1/YuGiOh_AR_2019.1/Frameworks/Vuforia.framework/Vuforia filter=lfs diff=lfs merge=lfs -text
