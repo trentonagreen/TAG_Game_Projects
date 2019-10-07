@@ -295,9 +295,15 @@ public class PlayerController : MonoBehaviour
         forward.y = 0f;
         right.y = 0f;
 
+<<<<<<< HEAD
         //Vector3 direction = hor * right + ver * forward;
 
         direction = hor * right + ver * forward;
+=======
+        direction = hor * right + ver * forward;
+        //direction = hor * Vector3.right + ver * Vector3.forward;
+
+>>>>>>> 23e11841298b94f49a567da5fc65e77ba45a0e4e
         direction = direction * speed * Time.deltaTime;
 
         if(isAttacking || isRolling || isComboAttacking || isRollAttacking || groundAngle >= maxGroundAngle)
