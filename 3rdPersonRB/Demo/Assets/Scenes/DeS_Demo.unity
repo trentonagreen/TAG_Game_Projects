@@ -320,6 +320,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: player-tpose
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 6d771bb38522b034f99ce404281ca36a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 6d771bb38522b034f99ce404281ca36a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -642,7 +647,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 796416414}
-  m_LocalRotation: {x: 0.1347677, y: 0.000000017049413, z: -0.00000000231886, w: 0.9908773}
+  m_LocalRotation: {x: 0.1347677, y: -0.000000017049413, z: 0.0000000023188689, w: 0.9908773}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -661,7 +666,9 @@ GameObject:
   - component: {fileID: 806870556}
   - component: {fileID: 806870555}
   - component: {fileID: 806870554}
+  - component: {fileID: 806870558}
   - component: {fileID: 806870557}
+  - component: {fileID: 806870559}
   m_Layer: 0
   m_Name: DeSPlayerController
   m_TagString: Player
@@ -728,14 +735,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 3
   runSpeed: 10
-  speed: 3
-  turnSpeed: 0
   isOnSlope: 0
-  isGroundSlopeCheck: 0
-  groundAngle: 0
-  ground:
+  groundLM:
     serializedVersion: 2
-    m_Bits: 512
+    m_Bits: 0
+--- !u!95 &806870558
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806870553}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 6d771bb38522b034f99ce404281ca36a, type: 3}
+  m_Controller: {fileID: 9100000, guid: c2ad1b436cafcf5448b5bdac3cf5a112, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &806870559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806870553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ed8da7e6312cd468c0c7441088b778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InputMagn: 0
 --- !u!1 &1099886237
 GameObject:
   m_ObjectHideFlags: 0

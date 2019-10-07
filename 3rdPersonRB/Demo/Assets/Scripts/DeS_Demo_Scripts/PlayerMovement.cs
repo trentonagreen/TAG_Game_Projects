@@ -7,7 +7,6 @@ public class PlayerMovement : MonoBehaviour
     [Header("Basic Movement Settings")]
     public float walkSpeed;
     public float runSpeed;
-    [SerializeField]
     private float speed;
 
     [Header("Rotate Settings")]
@@ -17,8 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Slope Settings")]
     public bool isOnSlope;
-    public float groundAngle;
     public LayerMask groundLM;
+    private float groundAngle;
     RaycastHit hitSlopeInfo;
 
     Rigidbody rb;
