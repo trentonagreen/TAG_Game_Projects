@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
-  <Tracking>
-    <ImageTarget name="DarkMagicianGirl" size="0.063500 0.092519" />
-    <ImageTarget name="Obelisk" size="0.063500 0.091294" />
-    <ImageTarget name="Blue-Eyes_White_Dragon" size="0.063500 0.091881" />
-  </Tracking>
-</QCARConfig>
